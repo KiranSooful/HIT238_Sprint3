@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <title>Your Movie Collection</title>
+      <meta name="author" content="Kiran Sooful">
+	    <meta name="description" content="HIT238 Project - search page">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" type="text/css" href="css/form.css">
+      <script type="text/javascript" href="script/form.js"></script>
+    </head>
+
+    <body class = "container">
+
+      <main class = "body">
+
+        <h1 class = "header">Add New Movie</h1>
+
+        <form name = "movieDetails" class = "formLayout">
+          <div class = "formRow">
+            <label for="title">Title:&nbsp</label>
+            <input type="text" id="title"/>
+          </div>
+          <div class = "formRow">
+            <label for="genre">Genre:&nbsp</label>
+            <input type="text" id="genre"/>
+          </div>
+          <div class = "formRow">
+            <label for="director">Director:&nbsp</label>
+            <input type="text" id="director"/>
+          </div>
+          <div class = "formRow">
+            <label for="actor1">Actor1:&nbsp</label>
+            <input type="text" id="actor1"/>
+          </div>
+          <div class = "formRow">
+            <label for="actor2">Actor2:&nbsp</label>
+            <input type="text" id="actor2"/>
+          </div>
+          <p> Check all that apply </p>
+          <section class = "checkboxLayout">
+            <div class = "checkBox">
+              <label for="VHS">VHS:&nbsp</label>
+              <input type="checkbox" id="VHS"/>
+            </div>
+            <div class = "checkBox">
+              <label for="Blu-Ray">Blu-Ray:&nbsp</label>
+              <input type="checkbox" id="Blu-Ray"/>
+            </div>
+          </section>
+          <section class = "checkboxLayout">
+            <div class = "checkBox">
+              <label for="DVD">DVD:&nbsp</label>
+              <input type="checkbox" id="DVD"/>
+            </div>
+            <div class = "checkBox">
+              <label for="3D">3D:&nbsp</label>
+              <input type="checkbox" id="3D"/>
+            </div>
+            <div class = "checkBox">
+              <label for="4K">4K:&nbsp</label>
+              <input type="checkbox" id="4K"/>
+            </div>
+          </section>
+        </form>
+
+        <input class = "button2" type="button" value="Save" id="save"/>
+        <a class = "button1" href = "index.html">Cancel</a>
+
+      </main>
+
+    </body>
+
+</html>

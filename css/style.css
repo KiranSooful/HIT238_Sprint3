@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 100px 100px 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #dfe0e4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body, .header, .button1, .button2 {
+  justify-content: space-around;
+  padding: 5px;
+  }
+
+.header, .button1, .button2 {
+  grid-column: 2 / 5;
+}
+
+.header {
+  grid-row: 1 / 2;
+  background-color: #5a0456f7;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
+.button1 {
+  grid-row: 2 / 3;
+}
+
+.button2 {
+  grid-row: 3 / 4;
+}
+
+.button1, .button2 {
+  display: flex;
+  padding: 5%;
+  width: 60%;
+  border: solid 5px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px red;
+  background-color: #16288bf7;
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button1:hover, .button2:hover {
+    transition: color .9s;
+    color: yellow;
+    box-shadow: 7px 7px 12px yellow;
+    text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 568px) {
+    .header {
+        font-size: 35px;
+    }
+
+  .button1, .button2 {
+    font-size: 25px;
+  }
+
+    .body{
+      width: 360px;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 760px) {
+    .header {
+        font-size: 40px;
+    }
+
+    .button1, .button2 {
+      font-size: 30px;
+    }
+
+    .body{
+      width: 568px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .header {
+        font-size: 80px;
+    }
+
+    .button1, .button2 {
+      font-size: 40px;
+      padding: 2%;
+    }
+
+    .body{
+      width: 768px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .header {
+        font-size: 80px;
+    }
+
+    .button1, .button2 {
+      font-size: 60px;
+      padding: 2%;
+    }
+
+    .body{
+      width: 1024px;
+      grid-template-rows: 1fr 200px 200px 1fr;
+    }
+}
+
+@media (min-width: 1920px) {
+    .header {
+        font-size: 90px;
+    }
+
+    .button1, .button2 {
+      font-size: 65px;
+      padding: 1%;
+    }
+
+    .body{
+      width: 80%;
+      grid-template-rows: 1fr 200px 200px 1fr;
+    }
+}
