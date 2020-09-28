@@ -1,8 +1,13 @@
-.container, .formRow, .checkBox, .checkboxLayout, .button1, .button2 {
+.container, .formRow, .checkboxRow, .checkboxLayout, .button1, .button2 {
   display: flex;
 }
+
 .container {
   justify-content: center;
+}
+
+.CheckBoxStyle {
+  transform: scale(1.5);
 }
 
 .body {
@@ -42,7 +47,7 @@
   display: table;
 }
 
-.formRow, .checkBox, .checkboxLayout {
+.formRow, .checkboxRow, .checkboxLayout {
   padding: 2.5%;
 }
 
@@ -50,7 +55,7 @@
   justify-content: flex-end;
 }
 
-.checkBox, .checkboxLayout {
+.checkboxRow, .checkboxLayout {
   flex-direction: row;
 }
 
@@ -144,7 +149,7 @@ input {
         font-size: 80px;
     }
 
-    .formRow, .checkBox {
+    .formRow, .checkboxRow {
       font-size: 150%;
     }
 
@@ -160,6 +165,14 @@ input {
     .body{
       width: 768px;
     }
+
+    .checkboxRow {
+      padding: 5%;
+    }
+
+    .CheckBoxStyle {
+      transform: scale(2.25);
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
@@ -167,7 +180,7 @@ input {
         font-size: 80px;
     }
 
-    .formRow, .checkBox {
+    .formRow, .checkboxRow {
       font-size: 150%;
     }
 
@@ -184,6 +197,14 @@ input {
       width: 1024px;
       grid-template-rows: 1fr 1fr 1fr 200px;
     }
+
+    .checkboxRow {
+      padding: 5%;
+    }
+
+    .CheckBoxStyle {
+      transform: scale(2.75);
+    }
 }
 
 @media (min-width: 1920px) {
@@ -191,7 +212,7 @@ input {
         font-size: 90px;
     }
 
-    .formRow, .checkBox {
+    .formRow, .checkboxRow {
       font-size: 150%;
     }
 
@@ -207,5 +228,13 @@ input {
     .body{
       width: 80%;
       grid-template-rows: 1fr 1fr 1fr 200px;
+    }
+
+    .checkboxRow {
+      padding: 5%;
+    }
+
+    .CheckBoxStyle {
+      transform: scale(2.75);
     }
 }

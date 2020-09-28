@@ -8,7 +8,6 @@
 	    <meta name="description" content="HIT238 Project - search page">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" type="text/css" href="css/form.css">
-      <script type="text/javascript" href="script/form.js"></script>
     </head>
 
     <body class = "container">
@@ -17,58 +16,66 @@
 
         <h1 class = "header">Add New Movie</h1>
 
-        <form name = "movieDetails" class = "formLayout">
+        <form id="movieDetails" name="movieDetails" class = "formLayout">
           <div class = "formRow">
             <label for="title">Title:&nbsp</label>
-            <input type="text" id="title"/>
+            <input type="text" id="title" name="title"/>
           </div>
           <div class = "formRow">
             <label for="genre">Genre:&nbsp</label>
-            <input type="text" id="genre"/>
+            <input type="text" id="genre" name="genre"/>
           </div>
           <div class = "formRow">
             <label for="director">Director:&nbsp</label>
-            <input type="text" id="director"/>
+            <input type="text" id="director" name="director"/>
           </div>
           <div class = "formRow">
             <label for="actor1">Actor1:&nbsp</label>
-            <input type="text" id="actor1"/>
+            <input type="text" id="actor1" name="actor1"/>
           </div>
           <div class = "formRow">
             <label for="actor2">Actor2:&nbsp</label>
-            <input type="text" id="actor2"/>
+            <input type="text" id="actor2" name="actor2"/>
           </div>
           <p> Check all that apply </p>
           <section class = "checkboxLayout">
-            <div class = "checkBox">
+            <div class = "checkboxRow">
               <label for="VHS">VHS:&nbsp</label>
-              <input type="checkbox" id="VHS"/>
+              <input class="CheckBoxStyle" type="checkbox" id="VHS"
+                    name="format" value="VHS"/>
             </div>
-            <div class = "checkBox">
+            <div class = "checkboxRow">
               <label for="Blu-Ray">Blu-Ray:&nbsp</label>
-              <input type="checkbox" id="Blu-Ray"/>
+              <input class="CheckBoxStyle" type="checkbox" id="Blu-Ray"
+                    name="format" value="Blu-Ray"/>
             </div>
           </section>
           <section class = "checkboxLayout">
-            <div class = "checkBox">
+            <div class = "checkboxRow">
               <label for="DVD">DVD:&nbsp</label>
-              <input type="checkbox" id="DVD"/>
+              <input class="CheckBoxStyle" type="checkbox" id="DVD"
+                    name="format" value="DVD"/>
             </div>
-            <div class = "checkBox">
+            <div class = "checkboxRow">
               <label for="3D">3D:&nbsp</label>
-              <input type="checkbox" id="3D"/>
+              <input class="CheckBoxStyle" type="checkbox" id="D"
+                    name="format" value="3D"/>
             </div>
-            <div class = "checkBox">
+            <div class = "checkboxRow">
               <label for="4K">4K:&nbsp</label>
-              <input type="checkbox" id="4K"/>
+              <input class="CheckBoxStyle" type="checkbox" id="K"
+                  name="format" value="4K"/>
             </div>
           </section>
+          <input class = "CheckBoxStyle" type="submit" value="Save" id="save"/>
         </form>
 
-        <input class = "button2" type="button" value="Save" id="save"/>
+
         <a class = "button1" href = "index.html">Cancel</a>
 
       </main>
+
+      <script type="text/javascript" src="script/form.js"></script>
 
     </body>
 
