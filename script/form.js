@@ -20,8 +20,4 @@ document.querySelector('#movieDetails').addEventListener('submit', function (evt
     //Stringify and save form data to lolcal storage
     var formData = JSON.stringify(formDetails);
     localStorage.setItem(formDetails["Title"], formData);
-
-    //test by output to console
-    console.log(formData);
-    console.log(formDetails);
   });

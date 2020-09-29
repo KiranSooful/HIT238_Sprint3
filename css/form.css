@@ -25,7 +25,6 @@
 }
 
 .body, .header, .button1, .button2 {
-  justify-content: space-around;
   padding: 5px;
   }
 
@@ -43,7 +42,7 @@
 
 .formLayout {
   grid-column: 1 / 6;
-  grid-row: 2 / 4;
+  grid-row: 2 / 5;
   display: table;
 }
 
@@ -65,7 +64,7 @@ input {
 }
 
 .button1 {
-  grid-column: 1 / 3;
+  justify-self: left;
 }
 
 .button2 {
@@ -73,9 +72,8 @@ input {
 }
 
 .button1, .button2 {
-  grid-row: 4 / 5;
   padding: 5%;
-  width: 60%;
+  width: 40%;
   border: solid 5px;
   border-radius: 25px;
   box-shadow: 5px 5px 10px red;
@@ -85,6 +83,8 @@ input {
   font-style: italic;
   text-decoration: none;
   text-align: start;
+  margin-right: 74%;
+  margin-left: -39px;
 }
 
 .button1:hover, .button2:hover {
