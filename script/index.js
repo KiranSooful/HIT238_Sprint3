@@ -28,7 +28,7 @@ connReq.addEventListener('upgradeneeded', function (evt) {
     console.log('Store created');
 
     // close the database
-    db.close();
+    //db.close();
   });
 
 });

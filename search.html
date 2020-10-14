@@ -7,15 +7,32 @@
       <meta name="author" content="Kiran Sooful">
 	    <meta name="description" content="HIT238 Project - search page">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	    <link rel="stylesheet" type="text/css" href="css/search.css">
     </head>
 
     <body class = "container">
 
       <main class = "body">
+
         <h1 class = "header">Search your Movies</h1>
-        <a class = "button2" href = "index.html">Back</a>
-      </main>
+
+        <form id="movieDetails" name="movieDetails" class = "formLayout">
+
+          <div class = "formRow">
+            <label for="title">Enter a movie title to search</label>
+            <input type="text" id="title" name="title"/>
+          </div>
+
+          <div class = "checkboxRow">
+            <a class = "button" href = "index.html">Cancel</a>
+            <input class = "button" type="submit" value="Search" id="save"/>
+          </div>
+
+        </form>
+
+        <div class = "results">
+          <h3>Search Results<h3>
+        </div>
 
     </body>
 

@@ -32,8 +32,9 @@ document.querySelector('#movieDetails').addEventListener('submit', function (evt
       request.addEventListener('success', function (evt) {
         alert('Successfully added data', evt.target.result);
 
-        // close the database
+        // close the database and reset the form
         db.close();
+        document.getElementById('movieDetails').reset();
       });
 
       connReq.addEventListener('error', function (evt) {
